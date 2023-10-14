@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+ int N, num;
+
+ // Get the value of N from the user
+
+ printf("Enter a value for N: ");
+
+ scanf("%d", &N);
+
+ num = 1;
+
+ // Use a do-while loop to print odd numbers from 1 to N
+
+ printf("Odd numbers from 1 to %d are:\n", N);
+
+ do {
+
+ if (num % 2 != 0) {
+
+ printf("%d\n", num);
+
+ }
+
+ num++;
+
+ } while (num <= N); //end of while loop
+
+ return 0;
+
+}
